@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <style>
+     body{
+        background-color: rgb(248, 244, 242);
+    }
+
+    h1{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    input{
+        width: 200px;
+        height: 30px;
+        
+    }
+
+    #submit{
+        margin-top: 15px;
+    }
+
+    form{
+        display: block;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    h3{
+        position: relative;
+        left: -62px;
+        color: rgb(108, 103, 103);
+    }
+
+    p{
+        position: relative;
+        right: -46px;
+        margin-top: -0.5px;
+        display: inline-block;
+    }
+   
+    </style>
+</head>
+<body>
+    <h1>Sign In</h1>
+
+    <form id="form" >
+
+    <h3>Email Id</h3>
+    <input id="email" type="text">
+
+    <h3>Password</h3>
+    <input id="password" type="text">
+    <br>
+    <p>Forgot Password?</p>
+    <br>
+
+   <input id="submit" type="submit" value="Sign In">
+
+
+    </form>
+</body>
+</html>
+<script>
+    var userData= JSON.parse(localStorage.getItem("userData"));
+
+   document.querySelector("form").addEventListener("submit",myFunction)
+
+function myFunction(){
+
+event.preventDefault()
+
+var data={
+    email:form.email.value,
+    password:form.password.value
+};
+
+displayData(userData,data)
+
+   
+function displayData(userData,data){
+
+userData.forEach(function(elem){
+
+    if(elem.useremail==data.email &&  elem.userpassword==data.password)
+    {
+        alert("Sign In Successful")
+        // Here i will  later redirect to the homepage
+    }
+
+});
+
+alert("Incorrect Login Credentials")
+
+}
+}
+
+</script>

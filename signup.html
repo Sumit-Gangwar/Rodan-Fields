@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+    body{
+        background-color: rgb(248, 244, 242);
+    }
+
+    h1{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    input{
+        width: 200px;
+        height: 30px;
+        
+    }
+
+    #submit{
+        margin-top: 15px;
+    }
+
+    form{
+        display: block;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    h3{
+        position: relative;
+        left: -62px;
+        color: rgb(108, 103, 103);
+    }
+
+    p{
+        position: relative;
+        right: -46px;
+        margin-top: -0.5px;
+        display: inline-block;
+    }
+
+    #p1{
+        font-weight: bold;
+        margin-top: 3px;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+
+    <form id="form" >
+
+    <h3>Username</h3>
+    <input id="name" type="text" >
+
+    <h3>Email Id</h3>
+    <input id="email" type="text">
+
+    <h3>Password</h3>
+    <input id="password" type="text">
+    
+    <br>
+
+   <input id="submit" type="submit" value="Sign Up">
+
+    <br>
+   <p>Already a Customer?</p>
+    <p id="p1">Sign In</p>
+    
+
+
+
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("#p1").addEventListener("click",signinFunction);
+
+function signinFunction(){
+
+window.location.href="signin.html";
+
+}
+
+    document.querySelector("form").addEventListener("submit",myFunction);
+
+var userData=JSON.parse(localStorage.getItem("userData")) || [] ;
+
+    function myFunction(){
+        event.preventDefault()
+        var obj={
+            username:form.name.value,
+            useremail:form.email.value,
+            userpassword:form.password.value
+        };
+
+userData.push(obj);
+
+localStorage.setItem("userData",JSON.stringify(userData)) ;
+
+window.location.href="signin.html";
+
+    }
+</script>
