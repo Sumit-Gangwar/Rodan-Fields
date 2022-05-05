@@ -74,35 +74,33 @@
 <script>
     var userData= JSON.parse(localStorage.getItem("userData"));
 
-   document.querySelector("form").addEventListener("submit",myFunction)
+   document.querySelector("form").addEventListener("submit",displayData)
+  
+function displayData(){
+    event.preventDefault()
 
-function myFunction(){
+var email=form.email.value;
+var password=form.password.value;
+var marker=false
+// userData.forEach(function(elem){
+    for(var i=0;i<userData.length;i++){
 
-event.preventDefault()
-
-var data={
-    email:form.email.value,
-    password:form.password.value
-};
-
-displayData(userData,data)
-
-   
-function displayData(userData,data){
-
-userData.forEach(function(elem){
-
-    if(elem.useremail==data.email &&  elem.userpassword==data.password)
+    if(userData[i].useremail==email &&  userData[i].userpassword==password)
     {
-        alert("Sign In Successful")
+        
+      alert("SignIn Successful");
+      marker=true
+      break;
+       
         // Here i will  later redirect to the homepage
+        
     }
-
-});
-
-alert("Incorrect Login Credentials")
-
-}
-}
-
+    
+     }
+     if(marker==false)
+    {
+    alert("Incorrect SignIn Credentials")
+    }
+        
+   }
 </script>
