@@ -6,83 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <style>
+        
+        * {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+ 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+        }
+
+
     body{
-        background-color: rgb(248, 244, 242);
+        background-color: white;
     }
 
-    h1{
-        margin-top: 50px;
+    #heading{
         text-align: center;
+        margin-top: 50px;
+       
     }
+
+
+    #container{
+       
+        margin: auto;
+        height: 600px;
+        width: 35%;
+        margin-top: 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+       
+    }
+
+    #top{
+text-align: center;
+margin-top: 20px;
+padding-top: 5px;
+
+    }
+
+    #main{
+       
+        height: 500px;
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
 
     input{
-        width: 200px;
-        height: 30px;
+        width:95%;
+        height: 40px;
+        margin-top: 5px;
+        border-radius: 5px;
+       
+        opacity: 0.8;
+        border: 2px solid rgb(95, 91, 91);
+       
+     }
+     
+     p{
+         font-weight: 1000;
+         margin-top: 20px;
+     }
+
+     #terms{
+         width: 95%;
+         margin: auto;
+         margin-top: 40px;
+         text-align: center;
+         opacity: 0.7;
+     }
+
+     u{
+         color: rgb(18, 18, 180);
         
-    }
+     }
 
-    #submit{
-        margin-top: 15px;
-        background-color: black;
-        color: aliceblue;
-        border: 0px;
-       width: 190px;
-       border-radius: 9px;
-    }
+     #submit{
+         
+        width: 100%;
+         margin-top: 40px;
+         height: 50px;
+         font-size: large;
+         background-color: black;
+         color: aliceblue;
+     }
 
-    form{
-        display: block;
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    h3{
-        position: relative;
-        left: -62px;
-        color: rgb(108, 103, 103);
-    }
-
-    p{
-        position: relative;
-        right: -46px;
-        margin-top: -0.5px;
-        display: inline-block;
-    }
-
-    #p1{
-        font-weight: bold;
-        margin-top: 3px;
+     #bottom{
+         
+         
+         text-align: center;
+         
+     }
+     #p1{
+        
         cursor: pointer;
     }
+
+    
 
     </style>
 </head>
 <body>
-    <h1>Sign Up</h1>
 
-    <form id="form" >
+    <div id="heading">
+        <h1>RODAN+FIELDS</h1>
+    </div>
 
-    <h3>Username</h3>
-    <input id="name" type="text" >
+    <div id="container">
 
-    <h3>Email Id</h3>
-    <input id="email" type="text">
+        <div id="top"><h2>Sign Up</h2></div>
 
-    <h3>Password</h3>
-    <input id="password" type="text">
-    
-    <br>
+        <div id="main">
+            <form id="form">
+                <p>Username</p>
+                <input id="name" type="text" placeholder="  Enter Username">
+                <p>Email</p>
+                <input id="email" type="text" placeholder="  Enter Email">
+                <p>Password</p>
+                <input id="password" type="text" placeholder="  Enter Password">
+                <div id="terms">
+                <p>By signing up,I accept the Rodan+Fields <u>Terms of Service</u> and acknowledge the <u>Privacy Policy.</u></p>
+               </div> 
+               <input id="submit" type="submit" value="SIGN UP">
+               
+                   <p id="bottom">Already have an acoount? <b id="p1">Sign In</b></p>
+                  
+              
+            </form>
+        </div>
 
-   <input id="submit" type="submit" value="Sign Up">
+    </div>
 
-    <br>
-   <p>Already a Customer?</p>
-    <p id="p1">Sign In</p>
-    
-
-
-
-    </form>
+   
 </body>
 </html>
 <script>
