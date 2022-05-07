@@ -21,86 +21,92 @@
 
 
         <!-- Filter Section -->
-        <div id="filter">
+        <div id="cat-filter">
             <h3>Filter By</h3>
             <hr>
-            <div id="cat-filter">
+            <div id="filter">
                 <div id="selectbox" onclick="showOption()">
                     <option>CATEGORY</option>
                     <div id="selectover"></div>
                 </div>
-                <div id="checkboxes">
-                    <label for="">
-                        <input type="checkbox" name="" class="box">Regimens (10)
-                    </label>
-                    <label for="">
-                        <input type="checkbox" name="" class="box" >Regimens (10)
-                    </label>
-                    <label for="">
-                        <input type="checkbox" name="" class="box">Regimens (10)
-                    </label>
-                    <label for="">
-                        <input type="checkbox" name="" class="box">Regimens (10)
-                    </label>
-                    <label for="">
-                        <input type="checkbox" name="" class="box">Regimens (10)
-                    </label>
-                    <label for="">
-                        <input type="checkbox" name="" class="box">Regimens (10)
-                    </label>
-                    <label for="">
-                        <input type="checkbox" name="" class="box">Regimens (10)
-                    </label>
-                    <label for="">
-                        <input type="checkbox" name="" class="box">Regimens (10)
-                    </label>
-                    <label for="">
-                        <input type="checkbox" name="" class="box">Regimens (10)
-                    </label>
+                <div id="fill">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" rel="Regimen" class="box" onchange="reg()">Regimens
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" rel="Face Serums" class="box" onchange="face()">Face Serums
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" rel="Eyes" class="box" onchange="change()">Eyes
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" rel="Face Masks" class="box" onchange="change()">Face Masks
+                        </label>
+                    </div>
 
+
+                    <!-- <label for="">
+                        <input type="checkbox" name="" class="box" onchange="change()">Hand & Body
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="" class="box" onchange="change()">Sun Protection
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="" class="box" onchange="change()">Pro Skincare Tools
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="" class="box" onchange="change()">Accessories
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="" class="box" onchange="change()">Special Offers
+                    </label> -->
                 </div>
             </div>
             <hr>
 
 
             <!-- Second Filter -->
-            <div id="cat-filter">
+            <!-- <div id="cat-filter">
                 <div id="selectbox" onclick="helloOption()">
-                    <option>XYZ</option>
+                    <option>SKIN CONCERN</option>
                     <div id="selectover"></div>
                 </div>
-                <div id="checkboxes">
+                <div id="checkbox">
                     <label for="">
-                        <input type="checkbox" name="" class="box"> (10)
+                        <input type="checkbox" name="" class="box">Fine Lines & Wrinkles
                     </label>
                     <label for="">
-                        <input type="checkbox" name="" class="box" > (10)
+                        <input type="checkbox" name="" class="box" >Lifting & Firming
                     </label>
                     <label for="">
-                        <input type="checkbox" name="" class="box">(10)
+                        <input type="checkbox" name="" class="box">Dull & Tired Skin
                     </label>
                     <label for="">
-                        <input type="checkbox" name="" class="box"> (10)
+                        <input type="checkbox" name="" class="box">Acne & Breakouts
                     </label>
                     <label for="">
-                        <input type="checkbox" name="" class="box">(10)
+                        <input type="checkbox" name="" class="box">Uneven Tone & Dark Marks
                     </label>
                     <label for="">
-                        <input type="checkbox" name="" class="box"> (10)
+                        <input type="checkbox" name="" class="box">Sensitivity & Visible Redness
                     </label>
                     <label for="">
-                        <input type="checkbox" name="" class="box"> (10)
+                        <input type="checkbox" name="" class="box">Pores & Blackheads
                     </label>
                     <label for="">
-                        <input type="checkbox" name="" class="box"> (10)
-                    </label>
-                    <label for="">
-                        <input type="checkbox" name="" class="box"> (10)
+                        <input type="checkbox" name="" class="box">Dry Skin
                     </label>
 
                 </div>
             </div>
-            <hr>
+            <hr> -->
         </div>
 
 
@@ -108,457 +114,15 @@
 
         <!-- Card Section -->
         <div id="card-section">
-            <!-- First Row Cards -->
-            <!-- 1st Card -->
-            <div id="card">
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HAAMR22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzI2MTh8aW1hZ2UvanBlZ3xoYzQvaGNmLzE0OTk2MzA1OTM2NDE0LmpwZ3w1M2RjYWNhODE0YTVjNTc5ZWNhOWM2NWMzZTA1M2JmYTQyZjRkNzI3NWZjNjViNTAzYzM3OTk5Y2VjYjJlMDMz"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>REDEFINE Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$270</h4>
-                            <p>($391 Value)</p>
-                        </div>
-                    </div>
 
-                    <div id="button">
-                        <button>SHOP NOW</button>
-                    </div>
-                </div>
-
-                <!-- 2nd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HRVMR22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzAwMDV8aW1hZ2UvanBlZ3xoYmYvaDU2LzE0OTk2MzA2Mjk2ODYyLmpwZ3xjOTYzYzVjYTFjMGJlMGY1MmU5ZjIxOTBhYzcwZmMyZWFhYzBlODhmYmVmZmQzNzZkOTAxZjQyZWJjZmUxMjdk"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>REDEFINE Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$245</h4>
-                            <p>($391 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>SHOP NOW</button>
-                    </div>
-                </div>
-
-                <!-- 3rd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HUNMR22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8Mjg4NzB8aW1hZ2UvanBlZ3xoZTEvaDg1LzE0OTk2MzA2OTE5NDU0LmpwZ3w5ZjJhYjRhMjVkMzcwNGFhMDQ2MGIzNzAzN2I1NzZhNTI4NWYwNzEyZDUwZDg4ZjE3ZTI0NzRkYjRhNmVmNjY0"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>UNBLEMISH Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$240</h4>
-                            <p>($356 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>SHOP NOW</button>
-                    </div>
-                </div>
-                <!-- 2nd Row -->
-                <!-- 1st Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HSOMR22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MjY5NTJ8aW1hZ2UvanBlZ3xoMDIvaGVlLzE0OTk2MzA2NTkxNzc0LmpwZ3w0YzE4YTg4MjA0ZmY4N2E4NzM4MTM5M2Y3OGVkOGQxMTUwMTMzMDNjYTk0MmRkODAyNDZmNmMyODVkZDFiYWQ2"
-                        alt="">
-                    <div id="card-desc">
-                        <p></p>
-                        <h4>SOOTHE Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$235</h4>
-                            <p>($351 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 2nd Row -->
-                <!-- 2nd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HAAML22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzQwMjF8aW1hZ2UvanBlZ3xoNWQvaGViLzE0OTk2MzE3NDA1MjE0LmpwZ3xiNTU3MjhjZjZmMDQxNDk4NjAwNzc3ZmUwZWNjMGU0NDdiNmY0NTUyYjM5ZDEzNDUzZDE2OTljMmVhNTU4Njdi"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>Lash Boost & REDEFINE Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$393</h4>
-                            <p>($546 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>SHOP NOW</button>
-                    </div>
-                </div>
-                <!-- 2nd Row -->
-                <!-- 3rd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HRVML22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzA5MDh8aW1hZ2UvanBlZ3xoMjgvaDViLzE0OTk2MzE3Nzk4NDMwLmpwZ3w3MTQyMTczOTlhZTU0MDY5YzJmNzFmY2NlZmM4NTgwYmNiYTgxZTMxMDg0YjQ2ZGYxODczYzJiODAzZGUxN2Zi"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>Lash Boost & REVERSE Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$368</h4>
-                            <p>($516 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 3rd Row-->
-                <!-- 1st Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HUNML22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzA2MjZ8aW1hZ2UvanBlZ3xoNzYvaDJmLzE1MDM4NTk2MDg3ODM4LmpwZ3wzMmRkNDBjZWFhNTYxNGQ1ZThjYTVkYzNjNzhjNDc2YjEwMmYxYzliYzAyZGQ5NTI0YTYwYmRjM2Y3Nzc2NDJi"
-                        alt="">
-                    <div id="card-desc">
-                        <p></p>
-                        <h4>Lash Boost & UNBLEMISH Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$362</h4>
-                            <p>($511 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 3rd Row -->
-                <!-- 2st Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HRVML22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzA5MDh8aW1hZ2UvanBlZ3xoMjgvaDViLzE0OTk2MzE3Nzk4NDMwLmpwZ3w3MTQyMTczOTlhZTU0MDY5YzJmNzFmY2NlZmM4NTgwYmNiYTgxZTMxMDg0YjQ2ZGYxODczYzJiODAzZGUxN2Zi"
-                        alt="">
-                    <div id="card-desc">
-                        <p></p>
-                        <h4>Lash Boost & REVERSE Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$357</h4>
-                            <p>($506 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 3rd Row -->
-                <!-- 3rd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HSOML22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8Mjg3NDF8aW1hZ2UvanBlZ3xoY2QvaDUzLzE1MDM4NTk1MzY2OTQyLmpwZ3w4NzU0NWJkZDRkZThiODk3ZDRhMzFlZjRmMDA0YzlmOWNmYjdkNjEwZDc5OTZmNTEwYTI0ZDAzODRlMWUzOWJi"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>Total RF Serum & REDEFINE Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$408</h4>
-                            <p>($566 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>SHOP NOW</button>
-                    </div>
-                </div>
-                <!-- 4th Row -->
-                <!-- 1st Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HRVMS22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzI2MjR8aW1hZ2UvanBlZ3xoYjkvaDZlLzE1MDM4NTk1MTM3NTY2LmpwZ3w1ZjQ4M2I5ZGVjMGZkNDc5NzRlMDhlOTdjNjEyOTJlNDQxODM5NTQxNjVlOTk2MDE0MDY1MGE2N2NjZTQ2YzAw"
-                        alt="">
-                    <div id="card-desc">
-                        <p></p>
-                        <h4>Total RF Serum & REVERSE Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$384</h4>
-                            <p>($536 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 4th Row -->
-                <!-- 2nd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HUNMS22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzI2Mjh8aW1hZ2UvanBlZ3xoOTQvaDgzLzE1MDM4NTk2MjUxNjc4LmpwZ3wwMWJjYWZmMGNkZTUzMTI4ZjA2NjIwZDliNGZjNDRkNjFiMmY2YmRmMTc5MjFmYTgxNjUwN2YzN2E2YjRmMjkw"
-                        alt="">
-                    <div id="card-desc">
-                        <p></p>
-                        <h4>Total RF Serum & UNBLEMISH Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$378</h4>
-                            <p>($531 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 4th Row -->
-                <!-- 3rd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/HSOMS22P-720x600-desktop-1.jpg?context=bWFzdGVyfHJvb3R8MzA4MDV8aW1hZ2UvanBlZ3xoMDUvaGI3LzE1MDM4NTk1Mzk5NzEwLmpwZ3xkZTE0ZWYyYzVhMWFjNWVhZTg2NTg5ZjVlMzRlYjM5YTc4NGRmNmYyZWEyMjJkZDVhY2NmM2RjMjQyZTVhZjIy"
-                        alt="">
-                    <div id="card-desc">
-                        <p></p>
-                        <h4>Total RF Serum & SOOTHE Regimen + Mini Special</h4>
-                        <div id="price">
-                            <h4>$373</h4>
-                            <p>($526 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 5th Row -->
-                <!-- 1st Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/ENHLSH01-Regimen-Explainer-R-F-Lash-Boost-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wxMDc0OHxpbWFnZS9wbmd8aW1hZ2VzL2hmMS9oYWMvMTQ1MzIwNDI1ODgxOTAucG5nfDQyNTQ0OGUzYmMwZTJkM2YzNzE1MjE2NzQ1M2YxMWQ5M2E3ZWQ2MjAwMDA3MzFmNjQyOWUwNDU3OWZmMTkzZDY"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>R + F Lash Boost</h4>
-                        <p>Applied nightly to promote the appearance of longer, stronger and darker-looking lashes. </p>
-                        <h4>$155</h4>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 5th Row -->
-                <!-- 2st Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/TRFS-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyODM2M3xpbWFnZS9wbmd8aW1hZ2VzL2g5Yy9oNzcvMTM3NTgzODUzODk1OTgucG5nfGYyZGUwNzdmOWM3N2Q2M2FlMjM4Zjc4MjQxNWZkNmIzOTc0NjIyZWM3MDgyZTY3YzA5YjMyZjNhZWY3MGE3YzY"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>Total RF Serum</h4>
-                        <p>Our most comprehensive anti-aging serum to revitalize and address all key signs of aging. </p>
-                        <h4>$175</h4>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 5th Row -->
-                <!-- 3rd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>REDEFINE Multi-Function Eye Cream</h4>
-                        <p>Visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet. </p>
-                        <h4>$70</h4>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 6th Row -->
-                <!-- 1st Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/AAWA125-AATN125-AATT030-AAPM030-REDEFINE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wzMTE2NXxpbWFnZS9wbmd8aW1hZ2VzL2hkNy9oMWMvMTM3NTgzODQwNzg4NzgucG5nfDE5NTM4Yzc1OTA0MWNiY2M5NzYwMDZhMTQ0NGVmZDEzZmRhYzVlZWE4YWRhODk3NWQ0ZGU1NDlhNzVjZTUyOTU"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>REDEFINE Regimen</h4>
-                        <p>Visibly lifts, sculpts + firms while minimizing the appearance of lines + deep wrinkles.</p>
-                        <div id="price1">
-                            <h4>$368</h4>
-                            <p>($516 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 6th Row -->
-                <!-- 2nd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>REDEFINE Multi-Function Eye Cream</h4>
-                        <p>Brightens + refines skin’s surface while tackling the look of fine lines + dark spots. </p>
-                        <div id="price1">
-                            <h4>$195</h4>
-                            <p>($245 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 6th Row -->
-                <!--3rd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>UNBLEMISH Regimen</h4>
-                        <p>Helps clear and prevent adult acne while visibly minimizing pores and fine lines.</p>
-                        <div id="price1">
-                            <h4>$190</h4>
-                            <p>($240 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 7th Row -->
-                <!-- 1st Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/SOWA125-SOTT050-SOMO050-SOSS050-SOOTHE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MDc1MHxpbWFnZS9wbmd8aW1hZ2VzL2g5Zi9oYWMvMTM3NTgzODUxMjc0NTQucG5nfGFmOTE5ZGY1MjdhZmFkNDhhNzNiOTkyYTYzODAxNzI4OTE3ZGQ5Zjk3YzRlOGRlNTIzYzU3MzZlMTQzNGEzNTI"
-                        alt="">
-                    <div id="card-desc">
-                        <p></p>
-                        <h4>SOOTHE Regimen</h4>
-                        <p>Protects sensitive skin, reduces visible redness + fortifies skin’s moisture barrier. </p>
-                        <div id="price1">
-                            <h4>$15</h4>
-                            <p>($255 Value)</p>
-                        </div>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 7th Row -->
-                <!-- 2nd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/RCWA125-RCTTO50-RCSP040-REGHARGE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9wbmd8aW1hZ2VzL2hkNi9oNDMvMTM3NTgzODQ2MDMxNjYucG5nfGQ4MzYxODU0ZDcxOTZiOTdlODg3NmZmZTAzZGQ1MGQ5Yjg0YzBhODk3NzJhYzM5NzZlNjQ1NjQzNGQ3NTY0ZmE"
-                        alt="">
-                    <div id="card-desc">
-                        <p></p>
-                        <h4>RECHARGE Regimen</h4>
-                        <p>Defends against lifestyle stressors that leave skin looking dull, blotchy + dehydrated. </p>
-                        <h4>$134</h4>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 7th Row -->
-                <!-- 3rd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Award Winner</p>
-                        <h4>SPOTLESS Regimen</h4>
-                        <p>For teens and young adults: Clears existing blemishes + prevents new ones from forming. </p>
-                        <h4>$89</h4>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 8th Row -->
-                <!-- 1st Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/ENHEFG1-570x570-Desktop.png?context=bWFzdGVyfGltYWdlc3wyMjI3N3xpbWFnZS9wbmd8aW1hZ2VzL2hkMS9oM2MvMTQ1MzIxNjY2MTUwNzAucG5nfGZlMDQ0NDRlMjczNDFlZjdkYWVmNjkwZWY4MDAwM2I4MjMwZGZiMzU3ZTViZGNlYjllNzBiZjAwY2FlZDU5NzA"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>Active Hydration Serum</h4>
-                        <p>Instantly boosts hydration levels by 200% and locks in moisture on skin's surface. </p>
-                        <h4>$112</h4>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 8th Row -->
-                <!-- 2nd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/ENHEY15-720x600-DESKTOP-v4.jpg?context=bWFzdGVyfGltYWdlc3w2MDYyOXxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGI2LzEzNTMzMTczODc0NzE4LmpwZ3w0MGI1MmM0OTExMmRiMzUzYzg5YTIyNWJjZTdiOTZkNzk1ZTVmOTk2MTBhY2IzZTcwNzhkZDI4NTUxZDI5Zjhh"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>Active Hydration Bright Eye Complex</h4>
-                        <p>Reduces visible dark circles and under-eye puffiness over time for younger-looking eyes. </p>
-                        <h4>$72</h4>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
-                <!-- 8th Row -->
-                <!-- 3rd Card -->
-                <div>
-                    <img src="https://www.rodanandfields.com/en-us/medias/ENBR001-720x600-DESKTOP.jpg?context=bWFzdGVyfHJvb3R8MTg2NDR8aW1hZ2UvanBlZ3xoNWMvaGQ5LzEzNTMzMTYzMDk0MDQ2LmpwZ3xiNmNjNjE3YmJmOTI4Y2UzZjAwM2RkMDQwZDNkNmNiZDQyZWQzMzQ4N2ZjZmMxOWY1OGEzYjQ1MTFiM2M1MGE5"
-                        alt="">
-                    <div id="card-desc">
-                        <p>Best Seller</p>
-                        <h4>Rodan + Fields Active Hydration Body Replenish</h4>
-                        <p>Instantly and continuously hydrates the body for younger-looking, younger-acting skin. </p>
-                        <h4>$66</h4>
-                    </div>
-
-                    <div id="button1">
-                        <button>ADD TO BAG</button>
-                    </div>
-                </div>
+            <!-- Product Cards -->
+            <div id="result">
             </div>
+
         </div>
     </div>
 </body>
-<script>
-    var expanded = true;
-
-    function showOption() {
-        var checkboxes = document.getElementById("checkboxes");
-        if (expanded == true) {
-            checkboxes.style.display = "block";
-            expanded = false;
-        } else {
-            checkboxes.style.display = "none";
-            expanded = true;
-        }
-    }
-
-    var x = true;
-
-    function helloOption() {
-        var checkboxes = document.getElementById("checkboxes");
-        if (x == true) {
-            checkboxes.style.display = "block";
-            x = false;
-        } else {
-            checkboxes.style.display = "none";
-            x = true;
-        }
-    }
+<script src="all products.js">
 </script>
 
 </html>
