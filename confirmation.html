@@ -48,6 +48,7 @@
             background: black;
             color: aliceblue;
             border: 0px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -68,3 +69,9 @@
     </div>
 </body>
 </html>
+<script>
+    document.querySelector("#homepage").addEventListener("click",gotohomepage);
+    function gotohomepage(){
+        window.location.href="/Homepage.html";
+    }
+</script>

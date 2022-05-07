@@ -89,6 +89,7 @@ padding-top: 5px;
          font-size: large;
          background-color: black;
          color: aliceblue;
+         cursor: pointer;
      }
 
      #bottom{
@@ -103,7 +104,10 @@ padding-top: 5px;
         cursor: pointer;
     }
 
-    
+   a{
+       text-decoration: none;
+       color:black;
+   } 
 
     </style>
 </head>
@@ -124,13 +128,13 @@ padding-top: 5px;
                 <p>Email</p>
                 <input id="email" type="text" placeholder="  Enter Email">
                 <p>Password</p>
-                <input id="password" type="text" placeholder="  Enter Password">
+                <input id="password" type="password" placeholder="  Enter Password">
                 <div id="terms">
                 <p>By signing up,I accept the Rodan+Fields <u>Terms of Service</u> and acknowledge the <u>Privacy Policy.</u></p>
                </div> 
                <input id="submit" type="submit" value="SIGN UP">
                
-                   <p id="bottom">Already have an acoount? <b id="p1">Sign In</b></p>
+                   <p id="bottom">Already have an acoount? <a href="/Homepage.html" id="p1">Sign In</a></p>
                   
               
             </form>
@@ -166,7 +170,9 @@ userData.push(obj);
 
 localStorage.setItem("userData",JSON.stringify(userData)) ;
 
-window.location.href="signin.html";
+window.location.href="/Homepage.html";
 
     }
+
+
 </script>

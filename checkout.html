@@ -20,7 +20,9 @@
             margin: auto;
             margin-top: 100px;
             width: 30%;
-            height: auto;
+            height: 360px;
+            font-weight: 600;
+            font-size: 16px;
             /* border: 1px solid red; */
             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -30,11 +32,14 @@
             display: inline-block;
             margin-left: 20px;
         }
-        #input{
-            margin-top: 10px;
+        input{
+            margin-top: 20px;
             width: 60%;
             height: 25px;
+            padding: 5px;
+            border: 1px solid lightgray;
            margin-left: 10px;
+           border-radius:5px;
         }
 
         p{
@@ -70,11 +75,11 @@ tr>td{
 }
 
 #proceed{
-    width: 30%;
+    width: 20%;
     height: 40px;
     
     margin: auto;
-    margin-top: 90px;
+    margin-top: 50px;
    margin-right: 100px;
 }
 
@@ -87,12 +92,17 @@ tr>td{
     border: 0px;
 }
 
-#promo{
-    height: 30px;
-    width: 80px;
+button{
+    /* width: 100px; */
+    padding: 10px 40px;
     background-color: black;
     color: aliceblue;
     border: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
 }
 
         
@@ -112,32 +122,18 @@ tr>td{
         <table border="0">
             <thead>
                 <tr>
-                    <td>Sub Total -</td>
-                    <td id="pl1">5000</td>
+                    <td>Sub Total</td>
+                    <td id="pl1"></td>
 
-                </tr>
-                <tr>
-                    <td>Extra Discount -</td>
-                    <td id="pl2"> 1000</td>
                 </tr>
 
                 <tr>
-                    <td>Special Price -</td>
-                    <td id="pl3">1000</td>
+                    <td>Shipping Fee</td>
+                    <td id="pl4">10</td>
                 </tr>
 
                 <tr>
-                    <td>Shipping Fee -</td>
-                    <td id="pl4">100</td>
-                </tr>
-
-                <tr>
-                    <td>Shipping Discount -</td>
-                    <td id="pl5">-100</td>
-                </tr>
-
-                <tr>
-                    <td>Extra Discount -</td>
+                    <td>Promo Discount</td>
                     <td id="pl6">0</td>
                 </tr>
 
@@ -145,15 +141,15 @@ tr>td{
 
             </thead>
         </table>  
-        <input type="text"  id="input" placeholder="  Enter Promo Code For Extra Discount" >
-        <input type="submit" value="Apply" id="promo">
+        <input type="text"  id="promo" placeholder="  Enter Promo Code For Extra Discount" >
+        <button>Apply</button>
     </div>
     <hr>
 
     <table>
         <thead>
             <tr>
-                <td>Total Amount -</td>
+                <td>Total Amount</td>
                 <td id="pl7">0</td>
             </tr>
         </thead>
@@ -169,12 +165,29 @@ tr>td{
 </body>
 </html>
 <script>
-    document.querySelector("#continue").addEventListener("click",movePage)
+    document.querySelector("#continue").addEventListener("click",movePage);
+    document.querySelector("button").addEventListener("click",showtotal);
+    var subtotal=localStorage.getItem("totalamount");
+    document.querySelector("#pl1").innerText="$"+subtotal;
+    var shipping=document.querySelector("#pl4").innerText;
+    var total=Number(subtotal)+Number(shipping);
+    document.querySelector("#pl7").innerText="$"+total;
+    
+    function showtotal(){
+        var promo=document.querySelector("#promo").value;
+        var matches = promo.match(/(\d+)/);
+        var matches=+matches[0];
+        var discount=total*matches/100;
+        var finalAmt=total-discount;
+        document.querySelector("#pl6").innerText="$"+discount;
+        document.querySelector("button").style.backgroundColor="green";
+        document.querySelector("button").innerText="Applied";
+        document.querySelector("#pl7").innerText="$"+finalAmt;
+        localStorage.setItem("amtPayable",finalAmt);
+    }
 
     function movePage(){
-
         event.preventDefault();
-
-        alert("jd");
+        window.location.href="/address.html";
     }
 </script>

@@ -53,8 +53,9 @@ width: 20%;
     input{
         margin-top: -19px;
         width: 93%;
-height: 30px;
-
+        height: 30px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
 
     }
 
@@ -68,6 +69,24 @@ height: 30px;
         color: aliceblue;
         border: 0px;
     }
+    select{
+        display:block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 30px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        font-size: 15px;
+        width: 30%;
+        text-align: center;
+    }
+    #name,#email{
+        /* border: 1px solid black; */
+        padding: 5px 3px;
+        font-weight: 600;
+        border-radius: 5px;
+        width: 95%;
+    }
    
 </style>
 
@@ -80,18 +99,26 @@ height: 30px;
     <div id="body">
 
         <form id="form">
-            <h4>Enter Name -</h4>
-            <input type="text" name="" id="name">
+            <h4>Name</h4>
+            <input id="name">
 
-            <h4>Enter Full Address -</h4>
+            <h4>Enter Full Address</h4>
             <input type="text" name="" id="">
-            <h4>Enter Pin Code -</h4>
+            <h4>Enter Pin Code</h4>
             <input type="Number" name="" class="pin">
-            <h4>Enter State -</h4>
-            <input type="text" class="pin" >
-            <h4>Enter Email -</h4>
-            <input type="text" id="email">
-            <h4>Enter Mobile Number -</h4>
+            <select>
+                <option>Select State</option>
+                <option value="">Kansas</option>
+                <option value="">Maryland</option>
+                <option value="">Indiana</option>
+                <option value="">New York</option>
+                <option value="">Washington</option>
+                <option value="">Virginia</option>
+                <option value="">Texas</option>
+            </select>
+            <h4>Email</h4>
+            <input id="email">
+            <h4>Enter Mobile Number</h4>
             <input type="number" id="mobile">
         </form>
 
@@ -102,9 +129,15 @@ height: 30px;
 </html>
 
 <script>
+    var signIn=JSON.parse(localStorage.getItem("signIn"));
+    console.log(signIn)
+    document.querySelector("#name").value=signIn.username;
+    document.querySelector("#email").value=signIn.useremail;
+    document.querySelector("#name").disabled=true;
+    document.querySelector("#email").disabled=true;
     document.querySelector("#next").addEventListener("click",nextPage)
 
     function nextPage(){
-        alert("js")
+       window.location.href="/payment.html";
     }
 </script>
