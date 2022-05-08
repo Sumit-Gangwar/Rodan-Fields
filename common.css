@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Navbar{
+    height: 50px;
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    position: relative;
+}
+.top-left{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    opacity: 0.7;
+    position:absolute;
+    left:3%;
+    cursor: pointer;
+}
+.top-left+p{
+    font-size:20px;
+    letter-spacing: 2px;
+    font-family: 'Goldman', cursive;
+    left:45%;
+    opacity: 0.7;
+    position:absolute;
+}
+.bag>img{
+    width: 20px;
+    height:18px;
+    margin: 12px 10px 5px;
+    opacity: 0.7;
+    font-size: 12px;
+    cursor: pointer;
+}
+.fa{
+    margin-left: 2px;
+    opacity: 0.7;
+}
+.rightnav{
+    display:flex;
+    align-items: center;
+    padding: 10px;
+    right:3%;
+    position: absolute;
+}
+.rightnav>p{
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+#searchbar{
+    position: absolute;
+    right: 21%;
+    top: 3%;
+    display:none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    z-index: 1;
+    transition:0.2s;
+}
+#searchbar>input{
+    padding: 5px;
+}
+#login{
+    width: 25%;
+    right:13%; 
+    display:none;   
+    background-color: white;
+    position:absolute;
+    z-index: 1;
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#login>label,#login>input{
+    display: block ;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+#login>input{
+    padding: 10px;
+    width:93%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+#login>p{
+    font-size: 13px;
+    opacity: 0.8;
+}
+#fgt-pwd{
+    margin-left: 47%;
+}
+#login>button{
+    padding: 10px;
+    width:100%;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-weight:600;
+    cursor: pointer;
+}
+
+#catagory{
+    display:flex;
+    height: 35px;
+    padding: 15px 0px;
+    width: 60%;
+    margin: auto;
+    border-top: none;
+    position: relative;
+    /* border:1px solid; */
+}
+#catagory>p{
+    margin: auto;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.shop,.featured,.ourstory{
+    display:none;
+    transition: 0.3s;
+    padding: 15px;
+    animation-name: toptobottom;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+}
+.shop-catagory{
+    text-align: center;
+    margin: 0px auto;
+
+}
+.shop-catagory>p,h5{
+    letter-spacing: 1px;
+    margin: 5px 0px 0px 10px;
+    cursor: pointer;
+}
+#catagory>p{
+    padding: 15px 20px;
+}
+.shop-catagory>p::after,#catagory>p::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(138, 194, 203);
+    transition: width .5s;
+}
+
+.shop-catagory>p:hover::after,#catagory>p:hover::after {
+    width: 100%;
+}
+@keyframes toptobottom{
+    0%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#btm-scn{
+    margin-top: 4%;
+    height: auto;
+    padding:15px;
+    border-top:1px solid lightgray
+}
+#about-social{
+    display: flex;
+    line-height: 40px;
+    opacity: 0.8;
+    justify-content: space-between;
+}
+#about-social>div>p{
+    text-align: left;
+    font-size: 13px;
+    line-height: 35px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#about-social>div>h4{
+    font-size: 30px;
+    font-weight: 350;
+    padding-left:25px;
+}
+#about-social>div>p>i{
+    font-size: 24px;
+    margin: 30px;
+    cursor: pointer;
+}
+#copyright{
+    display:flex;
+    justify-content:start;
+    margin-top: 5%;
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+}
+#copyright>h6>span{
+    margin: 10px;
+}
