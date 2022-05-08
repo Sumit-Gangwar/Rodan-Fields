@@ -11,19 +11,6 @@ function showOption() {
     }
 }
 
-var x = true;
-
-function helloOption() {
-    var checkboxes = document.getElementById("fill");
-    if (x == true) {
-        checkboxes.style.display = "block";
-        x = false;
-    } else {
-        checkboxes.style.display = "none";
-        x = true;
-    }
-}
-
 
 // Product Card
 
