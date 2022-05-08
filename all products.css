@@ -8,7 +8,7 @@
 hr {
     margin-top: 10px;
     margin-bottom: 10px;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 #container {
@@ -29,6 +29,13 @@ hr {
     margin-right: 50px;
 }
 
+#cat-filter>h3 {
+    font-size: 20px;
+    opacity: 0.7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
 #filter {
     width: 300px;
     padding-top: 12px;
@@ -42,9 +49,11 @@ hr {
     position: relative;
 }
 
-#selectbox+option {
+#selectbox>option {
     width: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
 }
 
 #selectover {
@@ -76,6 +85,8 @@ hr {
     height: 25px;
     font-size: 18px;
     margin-top: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -88,13 +99,10 @@ hr {
 } */
 
 input.box {
-    width: 15px;
-    padding: 50px 100px;
-    height: 20px;
-    border: none;
-    outline: none;
-    display: inline-block;
-    /* margin-right: 10px; */
+    left: 9px;
+    top: 5px;
+    width: 30px;
+    height: 15px;
 }
 
 #card-section {
@@ -137,6 +145,16 @@ input.box {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#card>p+span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#card>h4+p {
+    opacity: 0.9;
+    font-weight: 400;
+}
+
 button {
     /* margin: auto; */
     margin-top: 70px;
@@ -148,15 +166,5 @@ button {
     background-color: white;
     color: black;
     border-radius: 5px;
-}
-
-#price {
-    display: flex;
-    margin-top: 10px;
-    height: 170px;
-    border: 1px solid teal;
-}
-
-#price>p {
-    margin-top: -16px;
+    cursor: pointer;
 }
