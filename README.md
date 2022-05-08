@@ -15,3 +15,5 @@ Then the user is redirected to the delivery address form.
 Then after filling the address details the user is redirected to the Payment Gateway.
 In payment gateway there are different options of mode of payment(i.e Cards,UPI,Netbanking,etc)
 After payment confirmation the user is show the confirmation page with order id.
+
+thank you.
