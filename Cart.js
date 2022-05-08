@@ -13,7 +13,7 @@ h2.innerText=("Total Items  : " +totalitem);
 body.append(h2,price,payment,home);
 home.addEventListener("click",gotohome);
 function gotohome(){
-    window.location.href="/Homepage.html";
+    window.location.href="/index.html";
 }
 payment.addEventListener("click",function(){
     window.location.href="/checkout.html";
