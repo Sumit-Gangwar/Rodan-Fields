@@ -2,8 +2,11 @@
 This group project is created by our team. 
 <br>
 In this project we have created a Dynamic and Responsive website with the help of HTML, JAVASCRIPT and CSS.
+<br>
 Functioning of our website:-
+<br>
 First the user has to SignIn into the website and if the user is a new customer then they have to SignUp first.
+<br>
 After successful signin the user is redirected to the homepage.
 Homepage consists of navbar,search option,Cart page and almost every information is available on homepage.
 Homepage consists of show all product page from where the user is redirected to the page where all our products are listed.
